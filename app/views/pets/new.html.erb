@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="form-row d-flex justify-content-center">
+    <%=simple_form_for(@pet) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :fee %>
+      <%= f.input :breed %>
+      <%= f.input :location %>
+      <%= f.input :description %>
+      <%= f.input :medical %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit "List your Pet", class: "btn btn-outline-primary" %>
+      <%= link_to "Back", pets_path, class: "btn btn-outline-primary" %>
+  <% end %>
+  </div>
+</div>

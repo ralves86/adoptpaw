@@ -1,2 +1,11 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="bg-white p-0">
+  <div class="pet-info">
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)), url(https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2050&q=80);">
+      <!-- photo from Krista Mangulsone - UNPLASH -->
+
+      <h1>Want a new Pet?</h1>
+      <p>AdoptPaw helps you find your new best friend!</p>
+      <%= link_to "Search", pets_path, class: "btn btn-success btn-search" %>
+      <%= link_to "List a Pet", new_pet_path, class: "btn btn-light btn-list" %>
+    </div>
+  </div>
