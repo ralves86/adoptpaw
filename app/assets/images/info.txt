@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Titillium-Bold
+font link: https://www.fontsquirrel.com/fonts/titillium
+font author: Accademia di Belle Arti Urbino
+font author site: http://www.accademiadiurbino.it/
+
+
+icon designer: Yu luck
+icon designer link: /yuluck
+        
+{"bg":"#EDF2F3","font":"#12262A","icon-gradient-0":"#20484F","icon-gradient-1":"#4E9BAB","slogan":"#263a3e"}
+      
