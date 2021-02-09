@@ -1,21 +1,38 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
 
-  <a class="navbar-brand" href=""><i class="fas fa-paw"></i> AdoptPaw</a>
+  <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
+  <i class="fas fa-paw"></i> AdoptPaw</a>
+  <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-      <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
     <ul class="navbar-nav ml-auto">
+      <% if user_signed_in? %>
+      <li class="nav-item active">
+        <%= link_to "Bookings", root_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to "Profile", edit_user_registration_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item active">
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+      </li>
+      <% else %>
       <li class="nav-item">
-        <a class="nav-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <%= link_to new_user_session_path, class: "nav-link" do %>
+        <i class="fas fa-sign-in-alt"></i> Login
+        <% end %>
       </li>
       <li class="nav-item">
-        <a class="nav-link"><i class="fas fa-user-plus"></i> Sign Up</a>
+        <%= link_to new_user_registration_path, class: "nav-link" do %>
+        <i class="fas fa-user-plus"></i> Sign Up
+        <% end %>
       </li>
+      <% end %>
     </ul>
-
   </div>
 </nav>
+

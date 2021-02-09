@@ -1,19 +1,9 @@
-<% @pets.each do %>
-  <div class="card" style="width: 18rem;">
-    <%= cl_image_path pet.photo.key %>
-    <div class="card-body">
-      <h5 class="card-title"><%= pet.name %></h5>
-      <p class="card-text"><%= pet.description %></p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item"><%= pet.location %></li>
-      <li class="list-group-item"><%= pet.medical %></li>
-      <li class="list-group-item">V<%= pet.breed %></li>
-      <li class="list-group-item">V<%= pet.fee %></li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+<div class="content">
+  <% @pets.each do |pet| %>
+  <div class="cards">
+    <div class="card" style="background-image: url(https://images.unsplash.com/photo-1516366434321-728a48e6b7bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80)">
+      <%= pet.name %>
     </div>
   </div>
-<% end %>
+  <% end %>
+</div>

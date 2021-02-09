@@ -1,5 +1,5 @@
 body {
-  background-color: #02252C;
+  background-color: #02252c;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  color: white;
+  color: white !important;
   opacity: 0.6;
 }
 
@@ -26,10 +26,11 @@ p {
 }
 
 .icon {
-  color: #12aa66;
+  color: #c7ffd8;
   margin-bottom: 1rem;
 }
 
 .icon:hover {
-  color: #79cea8;
+  color: #fff;
 }
+

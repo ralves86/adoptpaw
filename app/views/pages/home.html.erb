@@ -2,7 +2,12 @@
   <div class="container">
     <h1>Want to help a Pet?</h1>
     <p>Find your new best friend and adopt a pet today</p>
-    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fas fa-search"></i> Search</button>
+    <%= link_to new_pet_path, class: "btn btn-outline-light btn-lg download-button" do %>
+      <i class="fas fa-paw"></i> List a Pet
+    <% end %>
+    <%= link_to pets_path, class: "btn btn-light btn-lg search-button" do %>
+      <i class="fas fa-search"></i> Search
+    <% end %>
   </div>
 </div>
 
