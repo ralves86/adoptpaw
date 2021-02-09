@@ -1,25 +1,19 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: #15a3b8;
+.navbar {
+  padding: 0 0 0.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 8px;
 }
 
 .nav-link {
+  font-size: 1.2rem;
+  font-family: "Ubuntu";
   color: white !important;
-}
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-.navbar-brand h6 {
-  color: white !important;
-  margin-bottom: 0;
-  padding-left: 8px;
-}
-
-.fa-paw {
-  color: white;
 }

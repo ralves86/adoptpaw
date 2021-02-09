@@ -1,1 +1,35 @@
-// Specific CSS for your home-page
+body {
+  background-color: #02252C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+p {
+  color: white;
+  opacity: 0.6;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #12aa66;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #79cea8;
+}
